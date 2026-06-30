@@ -23,21 +23,29 @@ First-Year Cyber Security student at Prince Dr. K. Vasudevan College of Engineer
 
 ## 📸 Screenshots
 
-### Homepage
+### Home Section
 
-![Homepage](assets/screenshots/Home%20Page.png)
+![Home](img/Home_Section.png)
 
-### Courses Page
+### About Section
 
-![Courses Page](assets/screenshots/Course%20page.png)
+![About](img/About_Section.png)
 
-### Gallery Page
+### Skills Section
 
-![Gallery Page](assets/screenshots/Gallery%20Page.png)
+![Skills](img/Skills_Section.png)
 
-### Contact Page
+### Projects Section
 
-![Contact Page](assets/screenshots/Contact%20Page.png)
+![Projects](img/Projects_Section.png)
+
+### Certificate Section
+
+![Certificates](img/Certificates_Section.png)
+
+### Contact Me Section
+
+![Contact Me](img/Contact_Section.png)
 
 ---
 
