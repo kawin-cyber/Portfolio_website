@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawin U S — Cybersecurity Student & Aspiring Software Engineer</title>
+    <meta name="description" content="First-Year Cyber Security student with a strong interest in penetration testing, network security, and secure software development.">
+    <meta property="og:title" content="Kawin U S — Cybersecurity Student & Aspiring Software Engineer">
+    <meta property="og:description" content="First-Year Cyber Security student with a strong interest in penetration testing, network security, and secure software development.">
+    <meta property="og:image" content="./img/hero-illustration.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kawin-cyber.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://kawin-cyber.github.io/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Apply theme immediately to avoid flash of unstyled content
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div id="scroll-progress"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo"><span>{</span> K <span>}</span></a>
+            <button class="hamburger-menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#certifications" class="nav-item">Certificates</a>
+                <a href="#education" class="nav-item mobile-only">Education</a>
+                <a href="#fun-facts" class="nav-item mobile-only">Fun Facts</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun light-icon"></i>
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                </button>
+                <a href="resume.pdf" class="resume-icon-btn" aria-label="Download Resume" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-reveal">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hello-text">Hello, I'm</p>
+                    <h1 class="hero-name">Kawin U S</h1>
+                    <h2 class="hero-title">First-Year Cyber Security Student</h2>
+                    <h3 class="hero-subtitle">Aspiring Software Engineer &middot; AI & Cybersecurity Enthusiast</h3>
+                    <p class="hero-tagline">Passionate about understanding how systems work, identifying security vulnerabilities, and building practical solutions through hands-on projects.</p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View My Work &rarr;</a>
+                        <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume &darr;</a>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://github.com/kawin-cyber" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/kawin-u-s" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:kawinus2@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg class="hero-img hero-img-custom" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Cybersecurity lock in glowing green hexagon">
+                        <defs>
+                            <filter id="heroGlow" x="-60%" y="-60%" width="220%" height="220%">
+                                <feGaussianBlur stdDeviation="9" result="blur"/>
+                                <feMerge>
+                                    <feMergeNode in="blur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                            <filter id="heroAmbient" x="-100%" y="-100%" width="300%" height="300%">
+                                <feGaussianBlur stdDeviation="40"/>
+                            </filter>
+                        </defs>
+
+                        <circle cx="250" cy="250" r="150" fill="#22c55e" opacity="0.07" filter="url(#heroAmbient)"/>
+
+                        <g stroke="#22c55e" stroke-width="1.5" fill="none" opacity="0.45">
+                            <path d="M250,60 L250,28 L208,28"/>
+                            <circle cx="204" cy="28" r="3" fill="#22c55e" stroke="none"/>
+                            <path d="M414.5,155 L452,155 L452,118"/>
+                            <rect x="448" y="110" width="8" height="8" fill="#22c55e" stroke="none"/>
+                            <path d="M414.5,345 L460,345 L460,382"/>
+                            <rect x="456" y="378" width="8" height="8" fill="#22c55e" stroke="none" transform="rotate(45 460 382)"/>
+                            <path d="M250,440 L250,472"/>
+                            <circle cx="250" cy="476" r="3" fill="#22c55e" stroke="none"/>
+                            <path d="M85.5,345 L48,345 L48,308"/>
+                            <rect x="44" y="300" width="8" height="8" fill="#22c55e" stroke="none"/>
+                            <path d="M85.5,155 L38,155 L38,190"/>
+                            <circle cx="38" cy="194" r="3" fill="#22c55e" stroke="none"/>
+                        </g>
+
+                        <g fill="#22c55e" opacity="0.5">
+                            <circle cx="320" cy="80" r="2.5"/>
+                            <circle cx="155" cy="408" r="2.5"/>
+                            <circle cx="438" cy="250" r="2.5"/>
+                            <circle cx="62" cy="250" r="2.5"/>
+                            <rect x="345" y="420" width="6" height="6"/>
+                            <rect x="128" y="76" width="6" height="6"/>
+                        </g>
+
+                        <path d="M58,232 L42,250 L58,268" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                        <path d="M442,232 L458,250 L442,268" stroke="#22c55e" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+                        <polygon points="250,60 414.5,155 414.5,345 250,440 85.5,345 85.5,155" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="4 6" opacity="0.35"/>
+
+                        <polygon points="250,100 380,175 380,325 250,400 120,325 120,175" fill="rgba(34,197,94,0.06)" stroke="#22c55e" stroke-width="2" opacity="0.85" filter="url(#heroGlow)"/>
+
+                        <g filter="url(#heroGlow)">
+                            <path d="M225,235 v-20 a25,25 0 0 1 50,0 v20" fill="none" stroke="#22c55e" stroke-width="14" stroke-linecap="round"/>
+                            <rect x="208" y="233" width="84" height="72" rx="12" fill="#22c55e"/>
+                            <circle cx="250" cy="261" r="7" fill="#0a0a0a"/>
+                            <rect x="246" y="264" width="8" height="17" rx="2" fill="#0a0a0a"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (includes Education and Fun Facts) -->
+        <section id="about" class="about-section section-reveal">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <img src="img/profile_image2.jpeg" alt="Kawin U S" class="profile-photo" width="96" height="96">
+                        <p>First-Year Cyber Security student with a strong interest in penetration testing, network security, and secure software development. Passionate about understanding how systems work, identifying security vulnerabilities, and building practical solutions through hands-on projects. Currently expanding technical knowledge in programming, web development, and cybersecurity fundamentals while seeking internship opportunities to apply and grow these skills.</p>
+                    </div>
+                    
+                    <div class="about-cards">
+                        <!-- Education Card -->
+                        <div id="education" class="info-card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-graduation-cap accent-icon"></i>
+                                <h3>Education</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4>Cyber Security / CSE</h4>
+                                <p class="institution">Prince Dr. K. Vasudevan College of Engineering and Technology</p>
+                                <p class="timeline">2025 – 2029 (First Year)</p>
+                            </div>
+                        </div>
+
+                        <!-- Fun Facts Card -->
+                        <div id="fun-facts" class="info-card">
+                            <div class="card-header">
+                                <i class="fa-solid fa-star accent-icon"></i>
+                                <h3>Fun Facts</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Interested in Cybersecurity</li>
+                                    <li>Interested in Networking</li>
+                                    <li>Learns best through practical projects</li>
+                                    <li>Enjoys traveling</li>
+                                    <li>Enjoys cricket and football</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-reveal">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-java skill-icon" style="color: #ED8B00;"></i>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-mobile-screen-button skill-icon" style="color: #38B2AC;"></i>
+                        <span class="skill-name">Responsive Web Design</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-database skill-icon" style="color: #4479A1;"></i>
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-qualifier">(Basic)</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-git-alt skill-icon" style="color: #F05032;"></i>
+                        <span class="skill-name">Git</span>
+                        <span class="skill-qualifier">(Basic)</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-brands fa-github skill-icon"></i>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-code skill-icon" style="color: #007ACC;"></i>
+                        <span class="skill-name">Visual Studio Code</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-network-wired skill-icon" style="color: var(--accent);"></i>
+                        <span class="skill-name">Networking Fundamentals</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-shield-halved skill-icon" style="color: var(--accent);"></i>
+                        <span class="skill-name">Secure Coding Fundamentals</span>
+                    </div>
+                    <div class="skill-tile">
+                        <i class="fa-solid fa-lightbulb skill-icon" style="color: var(--accent);"></i>
+                        <span class="skill-name">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <a href="https://github.com/kawin-cyber" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View More on GitHub
+                    </a>
+                </div>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="img/tige-screenshot.png" alt="TIGE College Landing Page" class="project-thumbnail" loading="lazy">
+                        <div class="project-content">
+                            <h3 class="project-title">TIGE — College Landing Page</h3>
+                            <p class="project-desc">A responsive, multi-page fictional college website ("Tokyo Institute of Global Excellence") with a Japanese-inspired visual identity. Built for educational/portfolio purposes.</p>
+                            <div class="project-tags">
+                                <span class="tag html-tag">HTML5</span>
+                                <span class="tag css-tag">CSS3</span>
+                                <span class="tag js-tag">Vanilla JS</span>
+                            </div>
+                            <a href="https://github.com/kawin-cyber/College-Landing-Page" class="btn btn-full btn-outline" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-thumbnail code-snippet-graphic">
+                            <pre><code><span class="kw">public</span> <span class="kw">class</span> <span class="cls">BankManagement</span> {
+    <span class="kw">public static void</span> <span class="func">main</span>(<span class="cls">String</span>[] args) {
+        <span class="kw">try</span> {
+            <span class="cls">Account</span> acc = <span class="kw">new</span> <span class="cls">Account</span>();
+            acc.<span class="func">withdraw</span>(<span class="num">500</span>);
+        } <span class="kw">catch</span> (<span class="cls">Exception</span> e) {
+            <span class="cls">System</span>.out.<span class="func">println</span>(<span class="str">"Error: "</span> + e);
+        }
+    }
+}</code></pre>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Java OOP Projects</h3>
+                            <p class="project-desc">A deliberate concept-by-concept learning structure demonstrating exception handling, abstraction, inheritance, encapsulation, polymorphism, HashMap, and LinkedList.</p>
+                            <div class="project-tags">
+                                <span class="tag java-tag">Java</span>
+                                <span class="tag">OOP</span>
+                                <span class="tag">Collections</span>
+                            </div>
+                            <a href="https://github.com/kawin-cyber/java-oop-projects" class="btn btn-full btn-outline" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-thumbnail code-snippet-graphic">
+                            <pre><code><span class="kw">def</span> <span class="func">guess_number</span>():
+    target = random.<span class="func">randint</span>(<span class="num">1</span>, <span class="num">100</span>)
+    guess = <span class="func">int</span>(<span class="func">input</span>(<span class="str">"Guess: "</span>))
+    <span class="kw">if</span> guess == target:
+        <span class="func">print</span>(<span class="str">"You won!"</span>)
+    <span class="kw">else</span>:
+        <span class="func">print</span>(<span class="str">"Try again."</span>)</code></pre>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Python Fundamentals Projects</h3>
+                            <p class="project-desc">A collection of CLI games and management systems, including Dice Rolling, Hangman, Number Guessing, Movie Booking, and Student Management via file handling.</p>
+                            <div class="project-tags">
+                                <span class="tag python-tag">Python 3</span>
+                            </div>
+                            <a href="https://github.com/kawin-cyber/python-fundamentals" class="btn btn-full btn-outline" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <a href="#certifications" class="btn btn-outline btn-sm">
+                        <i class="fa-solid fa-list"></i> View All Certificates
+                    </a>
+                </div>
+                <div class="cert-grid">
+                    
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-brands fa-microsoft" style="color: #00a4ef;"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Microsoft Applied Skills</span>
+                                <h3 class="cert-title">Secure Storage for Azure Files and Azure Blob Storage</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Oct 26, 2025</p>
+                            <a href="Certificates/Secure_Storage_for_Azure_Files_and_Azure_Blob_Storage.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-brands fa-microsoft" style="color: #00a4ef;"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Microsoft Applied Skills</span>
+                                <h3 class="cert-title">Create and Manage Canvas Apps with Power Apps</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Nov 23, 2025</p>
+                            <a href="Certificates/Create_and_Manage_Canvas_Apps_with_Power_Apps.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-white" style="color: #007cc3; font-weight: bold; font-family: 'Inter', sans-serif;">in</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Infosys Springboard</span>
+                                <h3 class="cert-title">Basics of Python</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Mar 19, 2026</p>
+                            <a href="Certificates/Basics_of_Python.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-white" style="color: #007cc3; font-weight: bold; font-family: 'Inter', sans-serif;">in</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Infosys Springboard</span>
+                                <h3 class="cert-title">Python Fundamentals</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Mar 20, 2026</p>
+                            <a href="Certificates/Python_Fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-white" style="color: #007cc3; font-weight: bold; font-family: 'Inter', sans-serif;">in</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Infosys Springboard</span>
+                                <h3 class="cert-title">Java Programming Fundamentals</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Mar 13, 2026</p>
+                            <a href="Certificates/Java_Programming_Fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-brands fa-free-code-camp"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">freeCodeCamp</span>
+                                <h3 class="cert-title">Responsive Web Design</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Mar 11, 2026</p>
+                            <a href="https://www.freecodecamp.org/certification/kawin_u_s/responsive-web-design-v9" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-brands fa-free-code-camp"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">freeCodeCamp</span>
+                                <h3 class="cert-title">Legacy Responsive Web Design V8</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Mar 10, 2026</p>
+                            <a href="Certificates/Legacy_Responsive_Web_Design_V8.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-solid fa-graduation-cap" style="color: #4CAF50;"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Scaler Topics</span>
+                                <h3 class="cert-title">Java Course — Mastering the Fundamentals</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Oct 22, 2025</p>
+                            <a href="Certificates/Java_Course_Mastering_the_Fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-solid fa-graduation-cap" style="color: #4CAF50;"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Scaler Topics</span>
+                                <h3 class="cert-title">JavaScript Course</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Nov 23, 2025</p>
+                            <a href="Certificates/JavaScript_Course.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-white" style="color: #000; font-weight: bold; font-family: sans-serif;">A</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Accenture / FutureLearn</span>
+                                <h3 class="cert-title">Digital Skills — User Experience</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Oct 23, 2025</p>
+                            <a href="Certificates/Digital_Skills_User_Experience.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-white" style="color: #000; font-weight: bold;">T</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">TCS iON</span>
+                                <h3 class="cert-title">Communication Skills</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Nov 27, 2025</p>
+                            <a href="Certificates/Communication_Skills.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-solid fa-building-columns"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">IIT Madras Incubation Cell — LEAP</span>
+                                <h3 class="cert-title">Automation with Arduino Bootcamp</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Aug 22–23, 2025</p>
+                            <a href="Certificates/Automation_with_Arduino_Bootcamp.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container"><i class="fa-solid fa-language"></i></div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">EF SET</span>
+                                <h3 class="cert-title">English Certificate — B2 Upper Intermediate</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Issued: Sep 23, 2025</p>
+                            <a href="Certificates/English_Certificate_B2_Upper_Intermediate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <div class="cert-logo-container bg-anthropic">A</div>
+                            <div class="cert-text-group">
+                                <span class="cert-issuer">Anthropic</span>
+                                <h3 class="cert-title">AI Fluency Learning Series (16 Courses)</h3>
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <p class="cert-date">Group of 16 courses</p>
+                            <a href="Certificates/AI_Fluency_Learning_Series_16_Courses.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">View All Certificates <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-reveal">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-methods">
+                            <a href="mailto:kawinus2@gmail.com" class="contact-method">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>kawinus2@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/kawin-cyber" class="contact-method" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+                                <span>github.com/kawin-cyber</span>
+                            </a>
+                            <a href="https://linkedin.com/in/kawin-u-s" class="contact-method" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <span>linkedin.com/in/kawin-u-s</span>
+                            </a>
+                            <div class="contact-method static-method">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" aria-describedby="name-error" required>
+                                <span class="error-msg" id="name-error"><i class="fa-solid fa-circle-exclamation"></i> Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" aria-describedby="email-error" required>
+                                <span class="error-msg" id="email-error"><i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" aria-describedby="subject-error" required>
+                                <span class="error-msg" id="subject-error"><i class="fa-solid fa-circle-exclamation"></i> Please enter a subject</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" aria-describedby="message-error" required></textarea>
+                                <span class="error-msg" id="message-error"><i class="fa-solid fa-circle-exclamation"></i> Please enter your message</span>
+                            </div>
+                            
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Kawin U S. Built with HTML, CSS &amp; JavaScript.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/kawin-cyber" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/kawin-u-s" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:kawinus2@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
