@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step. Showcases my skills, projects, and certifications as a first-year Cyber Security student.
 
-🔗 **Live site:** [kawin-cyber.github.io](https://kawin-cyber.github.io) <!-- update if your repo/Pages URL differs -->
+🔗 **Live site:** [(https://kawin-cyber.github.io)](https://kawin-cyber.github.io/Portfolio_website/) <!-- update if your repo/Pages URL differs -->
 
 ## About
 
