@@ -2,22 +2,82 @@
 
 A responsive personal portfolio website built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step. Showcases my skills, projects, and certifications as a first-year Cyber Security student.
 
-🔗 **Live site:** [(https://kawin-cyber.github.io)](https://kawin-cyber.github.io/Portfolio_website/) <!-- update if your repo/Pages URL differs -->
+🔗 **Live site:** [(https://kawin-cyber.github.io)](https://kawin-cyber.github.io/Portfolio_website/) 
 
 ---
-## About
+## About Me
 
-First-Year Cyber Security student at Prince Dr. K. Vasudevan College of Engineering and Technology, with a strong interest in penetration testing, network security, and secure software development. This site is where I track and share what I'm building and learning.
+I'm a student with a growing interest in cybersecurity and networking. My curiosity started with the idea of hacking, but it quickly expanded into understanding how systems, networks, and security mechanisms work behind the scenes.
+
+I enjoy learning through hands-on projects, exploring security concepts, and building practical solutions. While I'm still early in my cybersecurity journey, I focus on developing strong technical foundations and continuously improving my skills.
 
 ---
-## Features
+## 📁 Project Structure
 
-- Fully responsive layout (desktop, tablet, mobile) with a slide-in mobile navigation menu
-- Light/dark theme toggle with preference saved via `localStorage`
-- Scroll-based section highlighting in the navbar
-- Animated section reveals on scroll (respects `prefers-reduced-motion`)
-- Client-side contact form validation with a `mailto:` submit action
-- Certificate gallery linking directly to verified PDF credentials
+```
+.
+├── index.html
+├── styles.css
+├── script.js
+├── resume.pdf
+├── img/
+│   ├── hero-illustration.svg
+│   ├── hero-image.jpg
+│   ├── profile_image2.jpeg
+│   └── tige-screenshot.png
+└── Certificates/
+    ├── AI_Fluency_Learning_Series_16_Courses.pdf
+    ├── Automation_with_Arduino_Bootcamp.pdf
+    ├── Basics_of_Python.pdf
+    ├── Communication_Skills.pdf
+    ├── Create_and_Manage_Canvas_Apps_with_Power_Apps.pdf
+    ├── Digital_Skills_User_Experience.pdf
+    ├── English_Certificate_B2_Upper_Intermediate.pdf
+    ├── Java_Course_Mastering_the_Fundamentals.pdf
+    ├── Java_Programming_Fundamentals.pdf
+    ├── JavaScript_Course.pdf
+    ├── Legacy_Responsive_Web_Design_V8.pdf
+    ├── Python_Fundamentals.pdf
+    ├── Responsive_Web_Design.pdf
+    └── Secure_Storage_for_Azure_Files_and_Azure_Blob_Storage.pdf
+```
+
+---
+## ✨ Features
+
+### 🎨 Design & User Experience
+
+* Responsive layout optimized for desktop, tablet, and mobile devices
+* Clean, modern personal portfolio design
+* Light and dark theme toggle with user preference saved via `localStorage`
+* Slide-in mobile navigation menu
+* Smooth scrolling and hover transitions
+* Active navigation highlighting based on scroll position
+
+### 🚀 Interactive Experience
+
+* Scroll reveal animations using `IntersectionObserver`
+* Accessibility-friendly animations that respect `prefers-reduced-motion`
+* Dynamic theme switching without page reload
+* Smooth section navigation
+
+### 📂 Portfolio Sections
+
+* Hero introduction
+* About Me
+* Skills
+* Featured Projects
+* Certifications with verified PDF credentials
+* Contact section with social links and resume access
+
+### ⚙️ JavaScript Functionality
+
+* Theme preference persistence using `localStorage`
+* Scroll-based active navigation tracking
+* Scroll-triggered section reveal animations
+* Client-side contact form validation
+* `mailto:` contact form submission
+* Mobile navigation menu interactions
 
 ---
 
@@ -58,37 +118,6 @@ First-Year Cyber Security student at Prince Dr. K. Vasudevan College of Engineer
 
 ---
 
-## Project Structure
-
-```
-.
-├── index.html
-├── styles.css
-├── script.js
-├── resume.pdf
-├── img/
-│   ├── hero-illustration.svg
-│   ├── hero-image.jpg
-│   ├── profile_image2.jpeg
-│   └── tige-screenshot.png
-└── Certificates/
-    ├── AI_Fluency_Learning_Series_16_Courses.pdf
-    ├── Automation_with_Arduino_Bootcamp.pdf
-    ├── Basics_of_Python.pdf
-    ├── Communication_Skills.pdf
-    ├── Create_and_Manage_Canvas_Apps_with_Power_Apps.pdf
-    ├── Digital_Skills_User_Experience.pdf
-    ├── English_Certificate_B2_Upper_Intermediate.pdf
-    ├── Java_Course_Mastering_the_Fundamentals.pdf
-    ├── Java_Programming_Fundamentals.pdf
-    ├── JavaScript_Course.pdf
-    ├── Legacy_Responsive_Web_Design_V8.pdf
-    ├── Python_Fundamentals.pdf
-    ├── Responsive_Web_Design.pdf
-    └── Secure_Storage_for_Azure_Files_and_Azure_Blob_Storage.pdf
-```
-
----
 ## Skills
 
 Python · Java · JavaScript · HTML5 · CSS3 · Responsive Web Design · MySQL (Basic) · Git (Basic) · GitHub · Visual Studio Code · Networking Fundamentals (Basic) · Secure Coding Fundamentals (Basic) · Problem Solving
